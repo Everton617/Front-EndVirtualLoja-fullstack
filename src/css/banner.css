@@ -1,0 +1,44 @@
+#conteiner-banner {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.banner-feature {
+    display: flex;
+    margin-left: 10px;
+    width: 90%;
+    gap: 10px;
+}
+
+@media (max-width:1200px){
+    .banner-feature {
+        width: 90%;
+        
+    }
+}
+
+@media (max-width:767px){
+    .banner-feature {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 1000px){
+    .banner-feature{
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: auto 0;
+
+    }
+   
+}
+

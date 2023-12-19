@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: rgb(228, 145, 37);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-image: url(oranges.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;    
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+#conteiner-navbar {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-icons {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    font-size: 2rem;
+    position: relative;
+    bottom:  76px;
+    left: 10px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1500;
+    
+    
+    /* display: none; */
+}
+
+.menu-icons i {
+    position: absolute;
+}
+
+#conteiner-navbar{
+    background-color: #C11717;
+    width: 100vw;
+}
+
+.container-cad{
+    display: none;
+}
+
+nav {
+    width:1500px ;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    -moz-border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    -ms-border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    -o-border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    height: 20px;
+    background:#C11717 ;
+    justify-content: left;
+    gap: 2rem;
+    
+    
+}
+
+.footer-nav{
+    display: none;
+}
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    width: 1500px;
+    
+}
+
+.nav-list li {
+    line-height: 8rem;
+    position: relative;
+   
+}
+
+
+.sub-menu li {
+    line-height: 4rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 10px;
+    color: #eee;
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: color 650ms;
+    -webkit-transition: color 650ms;
+    -moz-transition: color 650ms;
+    -ms-transition: color 650ms;
+    -o-transition: color 650ms;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+
+.nav-list a:hover {
+    color: var(--main-color);
+}
+
+
+.sub-menu {
+    width: 30rem;
+    display: block;
+    position: absolute;
+    border-top: 3px solid var(--main-color);
+    background-color: #f1efef;
+    z-index: 100;
+    top: 16rem;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu a{
+    color: #050404;
+}
+
+.sub-menu::before {
+    content: '';
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom: 1.2rem solid var(--main-color);
+}
+
+.sub-menu .sub-menu::before {
+    top: .9rem;
+    left: -2.5rem;
+    border: 1.2rem solid transparent;
+    border-right-color: var(--main-color);
+}
+
+.link-submenu{
+    color: #050404;
+}
+
+.sub-menu .sub-menu {
+    border-top: none;
+    border-left: 3px solid var(--main-color);
+    top: 0;
+    left: 160%;
+}
+
+
+.nav-list li:hover>.sub-menu {
+    top: 5.5rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu li:hover>.sub-menu {
+    top: 0;
+    left: 100%;
+}
+
+li.move-right {
+    margin: auto 0 auto auto;
+    line-height: initial;
+}
+
+@media screen  and (max-width: 767px) {
+    #conteiner-navbar{
+        height: 1px;
+    }
+    .container-cad{
+        z-index: 2000;
+        display: none;
+        justify-content: center;
+        position: absolute;
+        bottom: 470px;
+        flex-direction: column;
+        background-color: #C11717;
+        height: 120px;
+        width: 290px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .container-cad.show {
+        display: flex; /* Exibe quando a classe show é aplicada */
+        opacity: 1; /* Opacidade máxima */
+    }
+
+    .div-cad{
+        position: relative;
+        left: 10px;
+    }
+    
+    .box-cad{
+        font-size: 30px;
+        display: flex;
+        margin-bottom: 5px;
+        padding-left: 13px;
+        cursor: pointer;
+    }
+
+    .box-cad span{
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
+    .icon-arrow{
+        margin-right: 40px;
+    }
+
+    .box-pedidos{
+        font-size: 24px;
+        display: flex;
+        padding-left: 13px;
+        cursor: pointer;
+    }
+
+    .box-pedidos p{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        z-index: 3000;
+        position: relative;
+        right: 350px;
+        top: 500px;
+        background: #F9FAFB;
+        height: 108px;
+        width: 290px;
+        justify-content: space-evenly;
+    }
+    
+    .footer-navlink{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .footer-navlink a{
+        font-size: 15px;
+        margin-left: 20px;
+        color: rgba(0, 0, 0, 0.507);
+        
+    }
+
+    .nav-list {
+        position: relative;
+        top: 244px;
+        right: 40px;
+        height: 420px;
+        flex-direction: column;
+        background-color: white;
+        z-index: 1000;
+        align-items: initial;
+        display: none;
+        overflow-y: scroll ;
+        overflow-x: hidden;
+        width: 310px;
+    }
+
+
+
+    .nav-list > li {
+        line-height: 6rem;
+    }
+
+    .sub-menu {
+        display: none;
+        position: initial;
+        border: 3px solid transparent;
+        margin-left: 1rem;
+        max-height: 0;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        margin-right: 0.4rem;
+        padding-right: 1rem;
+    }
+
+    .sub-menu .sub-menu {
+        border: none;
+        overflow: hidden;
+        margin-right: 0.4rem;
+    }
+
+    .sub-menu::before {
+        display: none;
+    }
+
+    .nav-list li:hover > .sub-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+
+    li.move-right {
+        margin: 0 auto 0 0;
+        line-height: initial;
+    }
+
+    .menu-icons {
+        display: block;
+    }
+
+    .fa-times {
+        display: none;
+    }
+
+    nav.active .fa-times {
+        
+        display: block;
+    }
+
+    nav.active .fa-bars {
+        display: none;
+    }
+    
+    nav.active .nav-list {
+        display: flex;
+    }
+}

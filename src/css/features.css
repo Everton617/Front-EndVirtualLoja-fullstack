@@ -1,0 +1,52 @@
+
+#features h1{
+    padding-left: 70px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.need-products{
+    display: flex;
+    width: 100vw;
+    padding-left: 60px;
+}
+.box-needproducts{
+    margin-right: 20px;
+    position: relative;
+}
+
+.box-needproducts img{
+    display: block;
+    width: 120px;
+    gap: 20px;
+}
+
+@media (max-width: 767px){
+    #features{
+        position: relative;
+        right: 40px;
+    }
+
+    .box-needproducts img{
+        display: block;
+        width: 70px;
+
+    }
+
+    #features h1{
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    
+    .need-products{
+        display: flex;
+        width: 100vw;
+    }
+    .box-needproducts{
+        display: flex;
+        position: relative;
+    }
+    
+   
+   
+}

@@ -1,0 +1,155 @@
+.conteiner-promo{
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 5%;
+    height: 480px;
+}
+
+.slick-slide > div{
+    margin: 0 10px;
+}
+
+.slick-list{
+    margin: 0 -10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: yellow;
+}
+
+.card-promo{
+    cursor: pointer;
+    height: 410px;
+    gap: 20px;
+    background: white;
+    box-shadow: 1px 0px 4px 0 #d3d1d17c;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.card-top h1{
+    margin: auto;
+    padding-top: 20px;
+    font-size: 14px;
+    width: 200px;
+    
+}
+
+.icon-stars{
+    margin: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.card-bottom {
+    font-size: 16px;
+
+}
+
+.card-bottom p{
+    display: flex;
+    align-items:self-end;
+    margin-top: 20px;
+    font-size: 13px;
+    margin: 10px;
+    
+}
+
+.descount-price{
+    margin-left: 10px;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+.card-top img{
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    margin: auto ;
+}
+
+@media (max-width: 480px){
+    .card-promo{
+      
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-top h1{
+        margin: auto;
+    }
+
+    .card-bottom p{
+        display: block;
+    }
+
+    .slick-slide > div{
+        margin: 0 20px;
+    }
+    
+    .slick-list{
+        margin: 0 -10px;
+    }
+
+   
+}
+
+@media (max-width: 600px){
+    
+    .card-top h1{
+        width: 200px;
+    }
+    
+    .card-promo{
+        
+       text-align: center;
+    }
+    .card-top h1{
+        margin: auto;
+        width: 340px;
+    }
+
+    .card-bottom p{
+        display: block;
+    }
+
+    .slick-slide > div{
+        margin: 0 40px;
+    }
+    
+    .slick-list{
+        margin: 0 -10px;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .card-top h1{
+        width: 200px;
+    }
+    
+    .card-promo{
+        
+       text-align: center;
+    }
+    .card-top h1{
+        margin: auto;
+        width: 240px;
+    }
+
+    .card-bottom p{
+        display: block;
+    }
+}
+  
+
+  

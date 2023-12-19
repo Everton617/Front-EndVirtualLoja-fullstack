@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'textos';
+    src: url(../fonts/ZonaPro-Thin.otf);
+}
+
+@font-face {
+    font-family: 'title';
+    src: url(../fonts/Mokoto\ Demo.ttf);
+}
+
+
+#container {
+    background-color: #C11717;
+    width: 100vw;
+}
+
+.topBar {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    
+}
+
+.contatos-area{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.contatos-area a{
+    color: rgba(247, 247, 247, 0.89);
+    font-size: 13px;
+    margin-left: 15px;
+    font-family: 'textos';
+    
+}
+
+.contatos-area i {
+    margin-right: 5px;
+}
+
+.area-title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.respon-mobile{
+    display: none;
+    
+}
+
+.respon-moblie{
+    display: none;   
+}
+
+.area-title h1 {
+    text-align: left;
+    display: flex;
+    font-size: 45px;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 40px;
+    font-family: 'title';
+    color: white;
+}
+
+.conteiner-searchbar{
+    display: none;
+}
+.conteiner-lg-searchbar{
+    display: flex;
+    width: 100%;
+}
+
+
+.search-bar {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 50px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-bar::placeholder {
+    font-size: 20px;
+    padding-left: 0px;
+    color: rgb(165, 162, 162);
+}
+
+.search-icon {
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    font-size: 30px;
+    color: rgb(85, 85, 85)525;
+}
+
+.cadastro-area {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+
+}
+
+.span-login {
+    display: block;
+    width: 120px;
+    font-size: 13px;
+    color: white;
+    margin-right: 10px;
+}
+
+.span-login:hover{
+    cursor: pointer;
+}
+
+.icon-person {
+    font-size: 24px;
+    color: white;
+    margin-right: 10px;
+}
+.icon-person:hover{
+    cursor: pointer;
+}
+
+.icon-cad {
+    font-size: 24px;
+    color: white;
+    margin-right: 25px;
+    margin-left: 15px;
+}
+
+.icon-cad:hover{
+    cursor: pointer;
+}
+
+.icon-cart {
+    font-size: 24px;
+    margin: 15px;
+    color: white;
+}
+
+.span-cart {
+    background-color: #861a1a;
+    width: 80px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contador {
+    text-align: center;
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+#conteiner-navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width:900px) and ( max-width: 1200px){
+    .cadastro-area{
+        padding-left: 20px;
+    }
+}
+
+@media (min-width:767px) and ( max-width: 900px){
+    
+.area-title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+
+.area-title h1 {
+    text-align: left;
+    display: flex;
+    font-size: 45px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 40px;
+    font-family: 'title';
+    color: white;
+}
+
+.cadastro-area{
+    padding-left: 20px;
+}
+
+
+}
+
+
+@media (max-width: 767px){
+    .contatos-area{
+        display: none;
+    }
+    .cadastro-area{
+        display: none;
+    }
+    .topBar {
+        height: 80px;
+        background-color: #C11717;
+        
+    }
+    .conteiner-title{
+        width: 90%;
+    }
+    .area-title{
+        width: 100%;
+        display:flex;
+        position: relative;
+        
+    }
+
+
+    .respon-mobile{
+        font-size: 25px;
+        display: flex;
+        
+        width: 150px;
+        min-width: 150px;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto ;
+    }
+    
+    .title-box{
+        padding-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .title-box h1 {
+        font-size: 25px;
+        font-family: 'title';
+        color: white;
+        margin-right: 200px;
+    }
+
+    .search-bar {
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        font-size: 16px;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .conteiner-searchbar{
+        display: flex;
+    }
+
+    .conteiner-lg-searchbar{
+        display: none;
+    }
+    
+    .search-bar::placeholder {
+        font-size: 15px;
+        padding-left: 0px;
+        color: rgb(165, 162, 162);
+    }
+    
+    .search-icon {
+        position: absolute;
+        left: 30px;
+        top: 55px;
+        font-size: 20px;
+        color: rgb(85, 85, 85)525;
+    }
+}
