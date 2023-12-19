@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <TopBar />
-      <div className="body">
         <AsideBar/>
         <Carrossel/>
         <Banner/>
@@ -21,8 +20,6 @@ function App() {
         <SlideBar/>
         <BannerGT/>
         <BannerCategorias/>
-      </div>
-      
     </>
   );
 }
