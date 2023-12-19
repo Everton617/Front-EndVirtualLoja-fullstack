@@ -13,10 +13,6 @@
     margin: 0 -10px;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: yellow;
-}
 
 .card-promo{
     cursor: pointer;
@@ -24,7 +20,7 @@
     gap: 20px;
     background: white;
     box-shadow: 1px 0px 4px 0 #d3d1d17c;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: 20px;
     
 }
