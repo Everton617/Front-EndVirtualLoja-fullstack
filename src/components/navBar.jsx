@@ -19,7 +19,6 @@ const Navbar = () => {
 
     return (
         <div id='conteiner-navbar' className={` ${isNavActive ? 'nav-ativa' : ''}`}>
-
             <nav className={isNavActive ? 'active' : ''}>
                 <div class="menu-icons" onClick={handleMenuClick}>
                     <i class="fas fa-bars"></i>
@@ -39,68 +38,43 @@ const Navbar = () => {
                         <div className='box-pedidos' > <SiHackthebox /> <p>Meus Pedidos</p> </div>
                     </div>
                 </div>
+
                 <ul class="nav-list">
 
-                    <li>
+                    
 
-                        <a href="#">Compre por departamento <i class="fas fa-caret-down"></i></a>
-                        <ul className="sub-menu">
-                            <li>
-                                <div className='offer-link' >
-                                    <a href="" >
-                                        Melhores Ofertas
-                                    </a>
-                                </div>
-                                <a href="" >
-                                    Eletroportáteis
-                                </a>
-                                <a href="">
-                                    Mochilas, Bolsas e Acessórios
-                                </a>
-                                <a href="">
-                                    Smartwacth
-                                </a>
-                                <a href="">
-                                    Casa Inteligente
-                                </a>
-                                <a href="">
-                                    Escritório
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">Pcs e Notebooks </a>
                     </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">Gamer</a>
                     </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">
                             Hardware
                         </a>
 
                     </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">Tablets</a>
                     </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">Mídias Digitais</a>
                     </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">Placas de vídeos</a>
                     </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">TV</a>
                     </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">Tablets</a>
                     </li>
-                    <li>
+                    <li className='general-list'>
                         <a href="#">Casa inteligente</a>
                     </li>
                 </ul>
-                <div className='footer-nav'>
+                <div className={`container-cad ${isNavActive ? 'show' : 'hide'}`} style={{top:500}}>
                     <div className="footer-navlink">
                         <FaMapMarkerAlt /> <a href="">Nossas Lojas</a>
                     </div>

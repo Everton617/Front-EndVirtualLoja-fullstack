@@ -2,6 +2,7 @@
     width: 100vw;
     margin-top: 30px ;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .conteiner-aside {
@@ -12,6 +13,7 @@
     background-color: rgba(219, 212, 212, 0.541);
     width: 90%;
     margin: auto;
+    overflow-y: hidden;
 }
 
 .aside-box{
@@ -44,7 +46,7 @@
     font-size: 16px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 900px){
     
    
     .carousel-box{

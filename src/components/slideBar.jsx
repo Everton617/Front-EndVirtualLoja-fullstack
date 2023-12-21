@@ -92,9 +92,9 @@ export default class SlideBar extends Component {
 
     return (
       <div className="conteiner-promo">
-        <h1>Melhores Promoções</h1>
+        <h1 style={{overflowY:'hidden'}}>Melhores Promoções</h1>
 
-        <Slider {...settings}>
+        <Slider {...settings} style={{overflowY:'hidden'}}>
         {dataBestSeller.map(item => (
           <div className="card-promo" style={{ width: 380 }}>
             <div className="card-top">

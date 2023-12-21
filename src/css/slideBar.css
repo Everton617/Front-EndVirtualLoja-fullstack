@@ -3,14 +3,18 @@
     margin-top: 25px;
     margin-left: 5%;
     height: 480px;
+    overflow-y: hidden;
 }
 
 .slick-slide > div{
     margin: 0 10px;
+    overflow-y: hidden;
 }
 
 .slick-list{
     margin: 0 -10px;
+    overflow-y: hidden;
+    
 }
 
 
@@ -22,7 +26,7 @@
     box-shadow: 1px 0px 4px 0 #d3d1d17c;
     margin-bottom: 40px;
     margin-top: 20px;
-    
+    overflow-y: hidden;
 }
 
 .card-top h1{
@@ -30,13 +34,14 @@
     padding-top: 20px;
     font-size: 14px;
     width: 200px;
-    
+    overflow-y: hidden;
 }
 
 .icon-stars{
     margin: 10px;
     font-size: 12px;
     cursor: pointer;
+    overflow-y: hidden;
 }
 
 
@@ -51,11 +56,12 @@
     margin-top: 20px;
     font-size: 13px;
     margin: 10px;
-    
+    overflow-y: hidden;
 }
 
 .descount-price{
     margin-left: 10px;
+    overflow-y: hidden;
 }
 
 .bold-text{
@@ -64,6 +70,7 @@
 
 .old-price{
     text-decoration: line-through;
+    overflow-y: hidden;
 }
 
 .card-top img{
@@ -71,6 +78,7 @@
     cursor: pointer;
     display: flex;
     margin: auto ;
+    overflow-y: hidden;
 }
 
 @media (max-width: 480px){

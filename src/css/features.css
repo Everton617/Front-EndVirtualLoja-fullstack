@@ -7,8 +7,9 @@
 
 .need-products{
     display: flex;
-    width: 100vw;
+    width: 1500px;
     padding-left: 60px;
+    
 }
 .box-needproducts{
     margin-right: 20px;

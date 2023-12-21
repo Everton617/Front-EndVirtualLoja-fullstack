@@ -41,11 +41,13 @@
     margin-right: 5px;
 }
 
+
 .area-title{
     display: flex;
     width: 100%;
     align-items: center;
     position: relative;
+    
 }
 
 .respon-mobile{
@@ -53,17 +55,14 @@
     
 }
 
-.respon-moblie{
-    display: none;   
-}
 
 .title-box h1{
     text-align: left;
     display: flex;
-    font-size: 45px;
-    margin: auto;
+    font-size: 35px;
+    margin: 0 auto;
     margin-left: 20px;
-    margin-right: 40px;
+    width: 200px;
     font-family: 'title', sans-serif;
     color: rgb(243, 243, 243);
 }
@@ -73,14 +72,16 @@
 }
 .conteiner-lg-searchbar{
     display: flex;
+    position: relative;
     width: 100%;
+    padding-left: 20px;
 }
 
 
 .search-bar {
     display: flex;
     height: 45px;
-    width: 100%;
+    width: 100vw;
     border-radius: 20px;
     padding-left: 50px;
     border: none;
@@ -95,8 +96,8 @@
 
 .search-icon {
     position: absolute;
-    left: 200px;
-    top: 10px;
+    left: 34px;
+    top: 7px;
     font-size: 30px;
     color: rgb(85, 85, 85)525;
 }
@@ -186,11 +187,11 @@
 .area-title h1 {
     text-align: left;
     display: flex;
-    font-size: 45px;
+    font-size: 40px;
     margin: auto;
     margin-left: 10px;
     margin-right: 40px;
-    font-family: 'title';
+    font-family: 'title',sans-serif;
     color: white;
 }
 
@@ -215,7 +216,7 @@
         
     }
     .conteiner-title{
-        width: 90%;
+        width: 100%;
     }
     .area-title{
         width: 100%;
@@ -228,7 +229,8 @@
     .respon-mobile{
         font-size: 25px;
         display: flex;
-        
+        align-items: center;
+        justify-items: right;
         width: 150px;
         min-width: 150px;
         align-items: center;
@@ -244,9 +246,8 @@
 
     .title-box h1 {
         font-size: 25px;
-        font-family: 'title';
+        font-family: 'title' ,sans-serif;
         color: white;
-        margin-right: 200px;
     }
 
     .search-bar {
@@ -260,6 +261,7 @@
 
     .conteiner-searchbar{
         display: flex;
+        width: 90vw;
     }
 
     .conteiner-lg-searchbar{
