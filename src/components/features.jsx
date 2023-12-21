@@ -18,7 +18,7 @@ const features = () => {
             <h1>Aqui tem tudo que você precisa_</h1>
             <div className='need-products'>
                 <div className="box-needproducts">
-                    <img src={feature1} className='' alt="" />
+                    <img src={feature1} className='img-fluid' alt="" />
 
                 </div>
                 <div className="box-needproducts">
