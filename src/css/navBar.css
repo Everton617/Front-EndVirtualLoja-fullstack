@@ -124,13 +124,14 @@ nav {
     .footer-navlink{
         font-size: 20px;
         margin-left: 10px;
+        color: rgba(255, 255, 255, 0.89);
     }
 
     .footer-navlink a{
         font-size: 15px;
         
         margin-left: 20px;
-        color: rgba(0, 0, 0, 0.507);
+        color: rgba(255, 255, 255, 0.89);
         
     }
 
@@ -146,6 +147,7 @@ nav {
         height: 120px;
         width: 290px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: rgba(255, 255, 255, 0.89);
     }
     .container-cad.show {
         display: flex; /* Exibe quando a classe show é aplicada */
@@ -199,7 +201,7 @@ nav {
         align-items: initial;
         display: none;
         height: 400px;
-        width: 41%;
+        width: 290px;
         
     }
 
