@@ -3,9 +3,11 @@
     src: url(../fonts/ZonaPro-Thin.otf);
 }
 
+
+
 @font-face {
     font-family: 'title';
-    src: url(../assets/fonts/Mokoto\ Demo.ttf);
+    src: url(../assets/fonts/JosefinSans-Italic-VariableFont_wght.ttf);
 }
 
 
@@ -33,7 +35,7 @@
     color: rgba(247, 247, 247, 0.89);
     font-size: 13px;
     margin-left: 15px;
-    font-family: 'textos';
+    font-family: 'textos', sans-serif;
     
 }
 
@@ -56,17 +58,16 @@
 }
 
 
-.title-box h1{
+.title-box h1 {
     text-align: left;
     display: flex;
-    font-size: 35px;
+    font-size: 40px;
     margin: 0 auto;
     margin-left: 20px;
     width: 200px;
     font-family: 'title', sans-serif;
     color: rgb(243, 243, 243);
 }
-
 .conteiner-searchbar{
     display: none;
 }
